@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+         android:title="share"
+         android:id="@+id/share_movie"
+         android:icon="@drawable/share"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_share_fb"
+          android:title="Share on Facebook" />
+
+    <item
+        android:title="Favourite"
+        app:showAsAction="always"
+        android:id="@+id/fav"
+        android:icon="@drawable/heart_selector"/>
+
+</menu>

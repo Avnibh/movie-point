@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_tvshow"
+            android:title="@string/tvshow"
+            android:icon="@drawable/ic_live_tv_black_24dp"/>
+
+        <item
+            android:id="@+id/nav_movies"
+            android:title="@string/movies"
+            android:checked="true"
+            android:icon="@drawable/ic_movie_black_36dp"/>
+
+        <item
+            android:id="@+id/nav_person"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="@string/menu_celebrities" />
+
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/menu_fav" />
+
+    </group>
+
+    <item android:title="Communicate" >
+        <menu>
+
+            <item
+                android:id="@+id/nav_setting"
+                android:title="@string/setting"
+                android:icon="@drawable/ic_settings_black_24dp"/>
+
+            <item
+                android:enabled="true"
+                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/nav_send"
+                android:title="@string/send" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:title="@string/about"
+                android:icon="@drawable/ic_person_black_24dp"/>
+
+        </menu>
+    </item>
+
+</menu>

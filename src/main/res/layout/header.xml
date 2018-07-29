@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/profile_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_detail_selector"
+        android:paddingBottom="5dp">
+
+
+        <ImageView
+            android:id="@+id/acc_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/acc_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/acc_image"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="User Name"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/review_count" />
+
+        <TextView
+            android:id="@+id/review_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/acc_image"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/acc_image"
+            android:text="Welcome"
+            android:textColor="#e9d9d3"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:text="BookMarks"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:text="Button"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedcdc"/>
+
+
+</LinearLayout>
